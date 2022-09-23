@@ -1,0 +1,38 @@
+﻿<Window x:Name="lblAlytalo" x:Class="WPFAlytalo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAlytalo"
+        mc:Ignorable="d"
+        Title="ÄLYTALOSOVELLUS" Height="450" Width="800" FontSize="14" FontFamily="Segoe UI Emoji" Background="#FFA5BA90">
+    <Grid>
+        <Button x:Name="btnLightsOnKitchen" Content="Päälle" HorizontalAlignment="Left" Margin="25,70,0,0" VerticalAlignment="Top" Width="69" Height="31" Click="btnValotPaalleKeittio_Click"/>
+        <Button x:Name="btnLightsOffKitchen" Content="Pois" HorizontalAlignment="Left" Margin="99,70,0,319.667" Width="69" RenderTransformOrigin="0.5,0.505" Click="btnLightsOffKitchen_Click"/>
+        <Label x:Name="lblKitchenLights" Content="KEITTIÖN VALAISTUS" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="160" FontWeight="Bold"/>
+        <Button x:Name="btnLightsOnLivingroom" Content="Päälle" HorizontalAlignment="Left" Margin="213,70,0,0" VerticalAlignment="Top" Width="69" Height="31" Click="btnLightsOnLivingroom_Click"/>
+        <Button x:Name="btnLightsOffLivingroom" Content="Pois" HorizontalAlignment="Left" Margin="287,70,0,0" VerticalAlignment="Top" Width="69" Height="31" Click="btnLightsOffLivingroom_Click"/>
+        <Label x:Name="lblLivingroomLights" Content="OLOHUONEEN VALAISTUS" HorizontalAlignment="Left" Margin="193,28,0,0" VerticalAlignment="Top" Width="187" FontWeight="Bold"/>
+        <Label x:Name="lblTemperatureNow" Content="Tämänhetkinen lämpötila:" HorizontalAlignment="Left" Margin="399,62,0,0" VerticalAlignment="Top" Height="39" Width="183" FontWeight="Bold"/>
+        <Label x:Name="lblTemperature" Content="TALON LÄMPÖTILA" HorizontalAlignment="Left" Margin="399,28,0,0" VerticalAlignment="Top" Height="39" Width="183" FontWeight="Bold"/>
+        <TextBox x:Name="txtTemperatureNow" HorizontalAlignment="Left" Height="24" Margin="582,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="lblGoalTemperature" Content="Tavoitelämpötila:" HorizontalAlignment="Left" Margin="399,101,0,0" VerticalAlignment="Top" Height="39" Width="183" FontWeight="Bold"/>
+        <TextBox x:Name="txtGoalTemperature" HorizontalAlignment="Left" Height="24" Margin="582,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <Button x:Name="btnSetNewTemperature" Content="Aseta lämpötila" HorizontalAlignment="Left" Margin="665,101,0,0" VerticalAlignment="Top" Width="118" Height="26" FontSize="11" Click="btnSetNewTemperature_Click"/>
+        <Slider x:Name="sldDimmerKitchen" HorizontalAlignment="Left" Margin="28,179,0,0" VerticalAlignment="Top" Height="44" Width="140" TickFrequency="5" TickPlacement="Both" Maximum="100" Minimum="0" ValueChanged="sldDimmerKitchen_ValueChanged"/>
+        <Label x:Name="lblDimmerKitchen" Content="Himmennyksen säätö:" HorizontalAlignment="Left" Margin="28,143,0,0" VerticalAlignment="Top" Width="160" Height="29"/>
+        <TextBox x:Name="txtKitchenLight" HorizontalAlignment="Left" Height="40" Margin="57,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" FontSize="18" Background="#FFA5BA90"/>
+        <TextBox x:Name="txtLivingroomLight" HorizontalAlignment="Left" Height="40" Margin="231,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Background="#FFA5BA90" FontSize="18"/>
+        <Label x:Name="lblDimmerLivingroom" Content="Himmennyksen säätö:" HorizontalAlignment="Left" Margin="213,143,0,0" VerticalAlignment="Top" Width="160" Height="29"/>
+        <Slider x:Name="sldDimmerLivingroom" HorizontalAlignment="Left" Margin="213,179,0,0" VerticalAlignment="Top" Height="44" Width="140" TickFrequency="5" TickPlacement="Both" Maximum="100" Minimum="0" ValueChanged="sldDimmerLivingroom_ValueChanged"/>
+        <Button x:Name="btnIndicatorKitchen" Content="" HorizontalAlignment="Left" Margin="57,110,0,0" VerticalAlignment="Top" Width="74" Height="21"/>
+        <Button x:Name="btnIndicatorLivingroom" Content="" HorizontalAlignment="Left" Margin="249,110,0,0" VerticalAlignment="Top" Width="74" Height="21"/>
+        <Label x:Name="lblSauna" Content="SAUNAN TOIMINNOT" HorizontalAlignment="Left" Margin="403,171,0,0" VerticalAlignment="Top" Height="31" Width="163" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnSaunaOn" Content="Päälle" HorizontalAlignment="Left" Margin="403,207,0,0" VerticalAlignment="Top" Width="93" Height="36" Click="btnSaunaOn_Click"/>
+        <Button x:Name="btnSaunaOff" Content="Pois" HorizontalAlignment="Left" Margin="501,207,0,177.667" Width="94" RenderTransformOrigin="0.5,0.505" Click="btnSaunaOff_Click"/>
+        <TextBox x:Name="txtSauna" HorizontalAlignment="Left" Height="36" Margin="619,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontFamily="Rockwell Extra Bold" FontSize="16" FontWeight="Bold" TextAlignment="Center" Background="#FFA5BA90"/>
+        <TextBox x:Name="txtSaunaHeat" HorizontalAlignment="Left" Height="40" Margin="448,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" FontSize="24" FontWeight="Bold" Background="#FFA5BA90" TextAlignment="Center"/>
+        <Label x:Name="lblTemperatureNow_Copy" Content="Tämänhetkinen lämpötila:" HorizontalAlignment="Left" Margin="403,249,0,0" VerticalAlignment="Top" Height="39" Width="183" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAlytalo", "WPFAlytalo\WPFAlytalo.csproj", "{218E69AB-FBB6-40F1-A49D-7F71723E367A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAlytalo.Tests", "WPFAlytalo.Tests\WPFAlytalo.Tests.csproj", "{2D3DCDE8-BE18-4EFB-9198-F1C590D793C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218E69AB-FBB6-40F1-A49D-7F71723E367A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218E69AB-FBB6-40F1-A49D-7F71723E367A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218E69AB-FBB6-40F1-A49D-7F71723E367A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218E69AB-FBB6-40F1-A49D-7F71723E367A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3DCDE8-BE18-4EFB-9198-F1C590D793C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3DCDE8-BE18-4EFB-9198-F1C590D793C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3DCDE8-BE18-4EFB-9198-F1C590D793C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3DCDE8-BE18-4EFB-9198-F1C590D793C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B97A8058-F650-421C-9754-94AF7B9C082D}
+	EndGlobalSection
+EndGlobal
